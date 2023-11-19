@@ -25,8 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mr-3">
                     <li class="nav-item">
-                        <a class="nav-link" href="/"
-                            style="{{ $active === 'home' ? 'font-weight: bold; ' : '' }}color: white;">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/user/reservasi?search=a"
