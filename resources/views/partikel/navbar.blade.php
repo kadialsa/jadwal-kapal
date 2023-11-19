@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
         <div class="container">
             <a class="navbar-brand" href="#page-top" style="font-size: 25px; font-weight: bold; color:white">LOKET</a>
             <button class="navbar-toggler navbar-toggler-ringht" type="button" data-bs-toggle="collapse"
@@ -25,7 +25,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mr-3">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">Home</a>
+                        <a class="nav-link" href="/"
+                            style="{{ $active === 'home' ? 'font-weight: bold; ' : '' }}color: white;">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/user/reservasi?search=a"
@@ -33,7 +34,8 @@
                             Tiket</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ">Galeri</a>
+                        <a class="nav-link {{ $active === 'reservasi' ? 'active' : '' }}" href="tambah"
+                            style="color: white;">Galeri</a>
                     </li>
                     {{-- <button type="submit" class="btn btn-primary">Login</button> --}}f
                 </ul>
